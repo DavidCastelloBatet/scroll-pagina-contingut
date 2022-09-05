@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* https://dev.to/matthias/units-in-css-em-rem-pt-px-vw-vh-vmin-vmax-ex-ch-53l0 */
+
+h1{
+  color: rgb(255, 0, 0);
+  font-size: 15vmin;
+  text-align: center;
+  padding: 30px 0;
+}
+
+p{
+  font-size: 3vmin;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  text-align: justify;
+  margin: 50px 200px 50px 0px;
+  padding: 0 30px;
+}
+
+#progress{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed;
+  bottom: 40vh;
+  right: 20px;
+  box-shadow: 0 0 10px rgba(87, 81, 81, 0.2);
+  display: grid;
+  place-items: center;
+}
+
+#progress-value{
+  display: block;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
